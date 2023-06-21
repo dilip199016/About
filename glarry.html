@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+
+    }
+    .imgslider{
+        width: 45%;
+        height: 400px;
+        background-image: url("Photo/photo1.jpeg");
+        background-size: 100% 100%;
+        box-shadow: 3px 3px red, -1em 0 .4em olive;
+animation: changeImage 100s linear infinite;
+    } 
+
+    @keyframes changeImage{
+        0%{
+            background-image: url("Photo/photo0.jpeg");
+        }
+        15%{
+            background-image: url("Photo/photo1.jpeg");
+        }
+        30%{
+            background-image: url("Photo/photo2.jpeg");
+        }
+        45%{
+            background-image: url("Photo/photo3.jpeg");
+        }
+
+        60%{
+            background-image: url("Photo/photo4.jpeg");
+        }
+        75%{
+            background-image: url("Photo/photo5.jpeg");
+        }
+        90%{
+            background-image: url("Photo/photo6.jpeg");
+        }
+        100%{
+            background-image: url("Photo/photo7.jpeg");
+        }
+    }
+
+
+    .para{
+        background:rgb(183, 1, 1);
+        border: 3px black;
+        border-radius: 12px;
+        color:rgb(253, 252, 253);
+        width: 400px;
+        height: 30px;
+        text-align: center;
+        margin-top: 0px;
+
+    }
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="imgslider"></div>
+    <p><h2 class="para">Various Image of My work Related</h2></p>
+</body>
+</html>
